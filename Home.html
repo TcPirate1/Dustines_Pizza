@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Dustine's Pizzas </title>
+		<!--mobile friendly-->
+		<meta name="viewpoint" content="width=device-width,initial-scale=1">
+		<!--Home page-->
+		<meta name="Description" content="Home page, will have pictures and links to other pages">
+		<meta name="keywords" content="Dustine, dustine, pizza, Pizza, Dustine'sPizza">
+		<meta name="author" content="TC">
+		<link rel="stylesheet" href="style_sheet/style.css">
+	</head>
+	
+		<header>
+			<div class="Logo"><a href="Home.html"><img src="images/logo.jpg" alt="Logo"/></a> </div>
+			<h1><a href="Home.html"> Dustine'sPizza</a></h1>
+			
+			<div class="socials">
+			<a href="https://www.instagram.com/"><img src="images/instagram.png" alt="instagram" class="instagram"/></a>
+			<a href="https://twitter.com/"><img src="images/twitter.png" alt="twitter" class="twitter"/></a>
+			<a href="https://www.facebook.com/"><img src="images/facebook.png" alt="facebook" class="facebook"/></a>
+			</div>
+	<nav>
+		<ul> <!-- Links-->
+			<li><a href="Home.html"> Home </a></li>
+			<li><a href="Menu.html"> Menu </a></li>
+			<li><a href="Booking.html"> Book a table! </a></li>
+			<li><a href="Contact us.html"> Contact us </a></li>
+		</ul>
+			
+	</nav>
+
+		</header>
+	<body>
+		<div>				<!--Carousel-->
+		<div><img src="images/Lakshmi_Pizza.jpg" alt="Pizza Goddess" class="Banner"/></div>
+		<div><img src= "images/pizza_slices.jpg" alt= "Pizza Slices" class="Banner"/></div>
+		<div><img src= "images/nice_pizza.jpg" alt= "Round Pizza" class="Banner"/></div>
+		<div><img src= "images/pizza_prep.jpg" alt= "Pizza Preparation" class="Banner"/></div>
+		<div><img src= "images/eating_pizza.jpg" alt= "Eating Pizza" class="Banner"/></div>
+		<div><img src= "images/eating_pizza2.jpg" alt= "Eating Pizza 2" class="Banner"/></div>
+		<div><img src= "images/Dust.png" alt= "Devouring Pizza" class="Banner"/></div>
+		<a href="Booking.html" class="button">Book a table now!</a>
+		</div>
+		<script>
+		let slideIndex = 0;
+		carousel();
+
+		function carousel() {
+		  let i;
+		  let x = document.getElementsByClassName("Banner");
+		  for (i = 0; i < x.length; i++) {
+			x[i].style.display = "none"; 
+		  }
+		  slideIndex++;
+		  if (slideIndex > x.length) {slideIndex = 1} 
+		  x[slideIndex-1].style.display = "block"; 
+		  setTimeout(carousel, 5000); 
+		}
+		</script>
+
+	</body>
+
+	<footer style="list-style-type:none;">
+	<div class= "Privacy">
+		<ul>
+			<li><a href="privacy_policy.html"> Privacy Policy </a></li>
+			<li><a href="faq.html"> FAQ </a></li>
+			<li><a href="hygiene.html"> Hygiene </a></li>
+			<li><a href="disclaimer.html"> Disclaimer </a></li>
+		</ul>
+	 </div>
+	</footer>
+</html>
